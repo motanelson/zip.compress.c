@@ -14,7 +14,7 @@
 int main(void)
 {
     char line[LINE_BUFSIZE];
-
+    printf("\033c\033[43;30m\n");
     puts("Introduza os ficheiros a incluir (separe por espaços):");
     if (!fgets(line, sizeof line, stdin)) {
         fputs("Erro a ler entrada.\n", stderr);
